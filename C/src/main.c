@@ -27,7 +27,10 @@ int main(void) {
     // Init Turn Count
     int turn = 9;
     // Loop While Board Has Empty Spaces (Counted w/ "turn")
+
     while (1) {
+        // Clear Console
+        system("clear");
         // Inform Player of Turn
         printf("%c's Turn.\n", player);
         // Print Board
@@ -58,8 +61,6 @@ int main(void) {
         else {
             player = 'X';
         }
-        // Clear Console
-        system("clear");
     }
     // Print Board
     printboard();
